@@ -1,8 +1,19 @@
+#DBAAS
+<h1>Final CC project repository </h1>
+<h3>High available scalable and fault tolerant database as a service </h3>
+<ul>
+	Dependencies
+	<li>docker</li>
+	<li>docker-compose</li>
+</ul
+<br>
+<h2>Instructions</h2>
 -To run the CC Final project these are the following steps . 
 	I made a setup file you can run it instead of these commands
 
 		- we need to have a network called mynet
 		$sudo docker network create --subnet=172.27.0.0/16 --gateway=172.27.0.1 mynet
+		For mac os some additional setup needs to be done about network
 
 		- I used docker volumes used for scaling
 		$sudo docker volume create data
