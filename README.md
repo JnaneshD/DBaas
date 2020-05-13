@@ -8,9 +8,9 @@
 </ul
 <br>
 <h2>Instructions</h2>
--To run the CC Final project these are the following steps . 
-	I made a setup file you can run it instead of these commands
-
+<h3>To run the CC Final project these are the following steps . </h3>
+	
+		I made a setup file you can run it instead of these commands
 		- we need to have a network called mynet
 		$sudo docker network create --subnet=172.27.0.0/16 --gateway=172.27.0.1 mynet
 		For mac os some additional setup needs to be done about network
@@ -27,7 +27,9 @@
 	
 		//Run the zookeeper on docker so that it gets 172.27.0.3 as IP
 		$sudo docker run --network=mynet --name=zoo zookeeper:latest
-	
+
+<h2>These commands must be executed to run the project</h2>
+
 	** Build the slave image . Go to the slaves folder and type .. Name of the image should be exactly same
 	$sudo docker build -t slaves_slave .
 
