@@ -1,0 +1,12 @@
+version: '3.1'
+
+services:
+  orchestr:
+    build: .
+    command: "python zk_orch.py"
+    volumes:
+    - /var/run/docker.sock:/var/run/docker.sock
+networks:
+  default:
+    external:
+      name: mynet
