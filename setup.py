@@ -5,3 +5,11 @@ os.system("sudo docker pull rabbitmq:3.8.3-alpine")
 os.system("sudo docker pull zookeeper:latest")
 os.system("sudo docker run --network=mynet --name=rmq rabbitmq:3.8.3-alpine")#IT SHOULD BE ASSIGNED TO HAVE IP AS 172.27.0.2
 os.system("sudo docker run --network=mynet --name=zoo zookeeper:latest")#IT SHOULD BE ASSIGNED TO HAVE IP AS 172.27.0.3 . chck by doing docker inspect mynet
+os.chdir("slaves")
+os.system("sudo docker build -t slaves_slave .")
+os.chdir("..")
+os.chdir("zookeep_client")
+os.system("sudo docker-compose up --build -d")
+os.chdir("..")
+os.chdir("orchestrator")
+os.system("sudo docker-compose up --build -d")
