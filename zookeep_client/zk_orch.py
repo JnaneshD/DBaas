@@ -96,8 +96,7 @@ while(x):
 					spawn(get_master())#A new slave container will be started
 					print("\n A master was elected among the slaves with smallest pid\n")
 				else:
-					print("\nA master is running ")
-
+					pass
 			else:#If there are no masters
 				if(len(slaves)>1):#making sure that always atleast one slave should be running
 					l = sorted(slaves.items() ,key = lambda kv:(kv[1],kv[0]))#Again leader election method
