@@ -9,7 +9,7 @@
 <br>
 <h2>Instructions</h2>
 <h3>To run the CC Final project these are the following steps . </h3>
-	
+<h3>Initial setup</h3>
 		I made a setup file you can run it instead of these commands
 		- we need to have a network called mynet
 		$sudo docker network create --subnet=172.27.0.0/16 --gateway=172.27.0.1 mynet
