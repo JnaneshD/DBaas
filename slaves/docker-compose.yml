@@ -1,0 +1,12 @@
+version: '3.1'
+
+services:
+  slave:
+    build: .
+    command: "python slave.py"
+    volumes:
+    - /var/run/docker.sock:/var/run/docker.sock
+networks:
+  default:
+    external:
+      name: mynet
