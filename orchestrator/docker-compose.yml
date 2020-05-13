@@ -1,0 +1,14 @@
+version: '3.1'
+
+services:
+  orches:
+    build: .
+    command: "python orschs.py"
+    volumes:
+    - /var/run/docker.sock:/var/run/docker.sock
+    ports:
+    - 9000:9000
+networks:
+  default:
+    external:
+      name: mynet
