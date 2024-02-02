@@ -1,10 +1,10 @@
 -To run the CC Final project these are the following steps . 
-	I made a setup file you can run it instead of these commands
+	We made a setup file you can run it instead of these commands
 
 		- we need to have a network called mynet
 		$sudo docker network create --subnet=172.27.0.0/16 --gateway=172.27.0.1 mynet
 
-		- I used docker volumes used for scaling
+		- we used docker volumes used for scaling
 		$sudo docker volume create data
 
 		- Pull the rabbitmq:3.8.3-alpine and zookeeper images
